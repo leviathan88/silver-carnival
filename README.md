@@ -1,6 +1,5 @@
-# MEAN Stack app development
+# MEAN Stack app developments
 >Exploring MEAN stack by Elvis Dedic
-
 
 ## Install
 
@@ -37,3 +36,11 @@ After you've install all the software with `npm install`, you can start the back
 cd ./backend;
 npm start;
 ```
+
+### Explored:
+1. Create simple server on backend (app.js)
+2. Use Webpack to start your frontend
+3. Add Bootstrap
+4. Create custom sass styles
+5. Add Font Awesome icons
+6. Create responsive design
