@@ -14,7 +14,7 @@ import {APP_BASE_HREF} from 'angular2/router'
   <div class="container">
     <nav class="navbar navbar-dark bg-inverse">
       <a class="navbar-brand" href="#">Exploring MEAN by Elvis</a>
-      <ul class="nav navbar-nav ">
+      <ul class="nav navbar-nav hidden-sm-down">
         <li class="nav-item">
           <a class="nav-link" href="#">Masters <span class="label label-pill label-primary">1</span></a>
         </li>
@@ -29,8 +29,11 @@ import {APP_BASE_HREF} from 'angular2/router'
         </li>
       </ul>
       <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item ">
+        <li class="nav-item hidden-sm-down">
           <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item hidden-md-up">
+          <button type="button" (click)="onClick()" class="btn btn-secondary-online"><i class="fa fa-bars"></i></button>
         </li>
       </ul>
     </nav>
@@ -41,32 +44,32 @@ import {APP_BASE_HREF} from 'angular2/router'
       <h1 class="display-3">Exploring MEAN</h1>
       <p class="lead">Becoming fullstack expert :)</p>
     </div>
-      <div class="card-deck home-sections ">
-        <div class="card yoda">
-          <div class="card-img-top"></div>
-          <div class="card-block">
-            <h4 class="card-title">Jedi Masters</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card weapons">
-          <div class="card-img-top"></div>
-          <div class="card-block">
-            <h4 class="card-title">Weapons</h4>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card ships">
-          <div class="card-img-top"></div>
-          <div class="card-block">
-            <h4 class="card-title">Ships</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+    <div class="card-deck home-sections ">
+      <div class="card yoda">
+        <div class="card-img-top"></div>
+        <div class="card-block">
+          <h4 class="card-title">Jedi Masters</h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
+      <div class="card weapons">
+        <div class="card-img-top"></div>
+        <div class="card-block">
+          <h4 class="card-title">Weapons</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card ships">
+        <div class="card-img-top"></div>
+        <div class="card-block">
+          <h4 class="card-title">Ships</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
     <div class="row">
     <section class="new-jedi">
       <header>
