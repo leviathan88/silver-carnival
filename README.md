@@ -1,4 +1,5 @@
-# Mastering MEAN Web Development
+# MEAN Stack app development
+>Exploring MEAN stack by Elvis Dedic
 
 
 ## Install
