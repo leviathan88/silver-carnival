@@ -38,7 +38,7 @@ module.exports = {
   //plugins extend standard functions of webpack
   plugins: [
     new webpack.HotModuleReplacementPlugin(), //updates our code on the fly
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('[name].css'),  //writes our css to file similar to the output section that does the JS
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
@@ -83,6 +83,7 @@ module.exports = {
         }]
       })
     },
+    //new loader to handle our css files
     {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract('css!postcss!sass?includePaths[]=' + (path.resolve(__dirname, './node_modules')))
