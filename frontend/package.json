@@ -33,6 +33,7 @@
     "font-awesome": "^4.4.0",
     "html-webpack-plugin": "^2.10.0",
     "nconf": "^0.8.4",
+    "node-sass": "^3.7.0",
     "postcss-loader": "^0.8.2",
     "protractor": "^3.0.0",
     "reflect-metadata": "0.1.3",
