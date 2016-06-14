@@ -7,17 +7,21 @@ const StringReplacePlugin = require('string-replace-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  //this tells webpack to generate source map for our JS, that browser can use to link the generated code back to source code
   devtool: 'eval-source-map',
+  //this tells webpack where we want to start assembling our code
   entry: {
     app: [
       './src/app.js'
     ]
   },
+  //how and where we want our files written
   output: {
     path: path.join(__dirname, 'public'),
     filename: '[name].js',
     publicPath: '/'
   },
+  //configures our development server
   devServer: {
     contentBase: './public',
     noInfo: true,
@@ -31,8 +35,9 @@ module.exports = {
     },
     port: 8000
   },
+  //plugins extend standard functions of webpack
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(), //updates our code on the fly
     new ExtractTextPlugin('[name].css'),
     new HtmlWebpackPlugin({
       template: './src/index.html'
@@ -44,6 +49,7 @@ module.exports = {
       browsers: ['last 2 versions']
     })
   ],
+  //eases way of extension 'example' becomes 'example.js'
   resolve: {
     extensions: ['', '.js']
   },
@@ -60,6 +66,7 @@ module.exports = {
         exclude: /node_modules/
       }
     ],
+    //transform JS with the loader (in this case Babel loader )
     loaders: [{
       test: /\.js?$/,
       loaders: ['babel'],
