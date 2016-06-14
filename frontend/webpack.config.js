@@ -1,4 +1,4 @@
-const autoprefixer = require('autoprefixer')
+const autoprefixer = require('autoprefixer')  //automatically inject vendor prefixes for some styles
 const path = require('path')
 const config = require('./config')
 const webpack = require('webpack')
@@ -44,9 +44,10 @@ module.exports = {
     }),
     new StringReplacePlugin()
   ],
+  //we tell postcss what kind of processing we want done
   postcss: [
     autoprefixer({
-      browsers: ['last 2 versions']
+      browsers: ['last 2 versions']   //we want last two versions
     })
   ],
   //eases way of extension 'example' becomes 'example.js'
