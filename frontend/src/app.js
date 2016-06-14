@@ -34,7 +34,10 @@ import {APP_BASE_HREF} from 'angular2/router'
         </li>
       </ul>
     </nav>
-    <div class="hero">
+    <div class="hidden-md-up">
+      <h2 class="text-xs-center">Exploring MEAN</h2>
+    </div>
+    <div class="hero hidden-sm-down">
       <h1 class="display-3">Exploring MEAN</h1>
       <p class="lead">Becoming fullstack expert :)</p>
     </div>
