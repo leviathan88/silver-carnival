@@ -13,7 +13,7 @@ import {APP_BASE_HREF} from 'angular2/router'
   template: `
   <div class="container">
     <nav class="navbar navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Mastering MEAN</a>
+      <a class="navbar-brand" href="#">Exploring MEAN by Elvis</a>
       <ul class="nav navbar-nav ">
         <li class="nav-item">
           <a class="nav-link" href="#">Masters <span class="label label-pill label-primary">1</span></a>
@@ -35,8 +35,8 @@ import {APP_BASE_HREF} from 'angular2/router'
       </ul>
     </nav>
     <div class="jumbotron hero m-y-md">
-      <h1 class="display-3">Mastering MEAN</h1>
-      <p class="lead">Full Stack Expert Javascript</p>
+      <h1 class="display-3">Exploring MEAN</h1>
+      <p class="lead">Becoming fullstack expert :)</p>
     </div>
       <div class="card-deck home-sections ">
         <div class="card yoda">
