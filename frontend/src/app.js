@@ -34,7 +34,7 @@ import {APP_BASE_HREF} from 'angular2/router'
         </li>
       </ul>
     </nav>
-    <div class="jumbotron hero m-y-md">
+    <div class="hero">
       <h1 class="display-3">Exploring MEAN</h1>
       <p class="lead">Becoming fullstack expert :)</p>
     </div>
