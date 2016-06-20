@@ -7,6 +7,7 @@ import {bootstrap} from 'angular2/platform/browser'
 import { RouteConfig, APP_BASE_HREF, ROUTER_BINDINGS, ROUTER_DIRECTIVES } from 'angular2/router'
 
 import Home from './app/home/home'
+import Navbar from './app/nav/navbar'
 
 import MasterList from './app/masters/list'
 import MasterNew from './app/masters/new'
@@ -27,34 +28,10 @@ import WeaponView from './app/weapons/view'
   selector: 'master-app'
 })
 @View({
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ROUTER_DIRECTIVES, Navbar],
   template: `
   <div class="container">
-    <nav class="navbar navbar-dark bg-inverse">
-      <a class="navbar-brand" [routerLink]="['/Home']">Exploring MEAN by Elvis</a>
-      <ul class="nav navbar-nav hidden-sm-down">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/Masters']">Masters <span class="label label-pill label-primary">1</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/Weapons']">Weapons <span class="label label-pill label-danger">15</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/Ships']">Ships</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item hidden-sm-down">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item hidden-md-up">
-          <button type="button" (click)="onClick()" class="btn btn-secondary-online"><i class="fa fa-bars"></i></button>
-        </li>
-      </ul>
-    </nav>
+    <navbar></navbar>
     <router-outlet></router-outlet>
   </div>
   `
