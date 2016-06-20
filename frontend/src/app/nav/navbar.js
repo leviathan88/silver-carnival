@@ -8,7 +8,7 @@ import Alert from './alert'
 })
 
 @View({
-  directives: [ ROUTER_DIRECTIVES ],
+  directives: [ ROUTER_DIRECTIVES, Alert ],
   template: `
   <nav class="navbar navbar-dark bg-inverse">
     <a class="navbar-brand" [routerLink]="['/Home']">Exploring MEAN by Elvis</a>
