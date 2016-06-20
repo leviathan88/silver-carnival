@@ -1,4 +1,4 @@
-import { Component, View } from 'angular/core';
+import { Component, View } from 'angular2/core';
 
 @Component({
   selector: 'home'
