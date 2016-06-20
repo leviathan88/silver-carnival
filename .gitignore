@@ -1,4 +1,4 @@
 node_modules
 .env.json
-public
 coverage
+npm-debug.log
