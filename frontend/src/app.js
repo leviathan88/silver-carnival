@@ -31,16 +31,16 @@ import WeaponView from './app/weapons/view'
   template: `
   <div class="container">
     <nav class="navbar navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Exploring MEAN by Elvis</a>
+      <a class="navbar-brand" [routerLink]="['/Home']">Exploring MEAN by Elvis</a>
       <ul class="nav navbar-nav hidden-sm-down">
         <li class="nav-item">
-          <a class="nav-link" href="#">Masters <span class="label label-pill label-primary">1</span></a>
+          <a class="nav-link" [routerLink]="['/Masters']">Masters <span class="label label-pill label-primary">1</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Weapons <span class="label label-pill label-danger">15</span></a>
+          <a class="nav-link" [routerLink]="['/Weapons']">Weapons <span class="label label-pill label-danger">15</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ships</a>
+          <a class="nav-link" [routerLink]="['/Ships']">Ships</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -62,17 +62,17 @@ import WeaponView from './app/weapons/view'
 @RouteConfig([
   {path: '/', component: Home, name: 'Home'},
 
-  {path: '/masters', component: MasterList, name: 'MasterList'},
+  {path: '/masters', component: MasterList, name: 'Masters'},
   {path: '/master/:id', component: MasterView, name: 'MasterView'},
   {path: '/master/:id/edit', component: MasterEdit, name: 'MasterEdit'},
   {path: '/master', component: MasterNew, name: 'MasterNew'},
 
-  {path: '/weapons', component: WeaponList, name: 'WeaponList'},
+  {path: '/weapons', component: WeaponList, name: 'Weapons'},
   {path: '/weapon/:id', component: WeaponView, name: 'WeaponView'},
   {path: '/weapon/:id/edit', component: WeaponEdit, name: 'WeaponEdit'},
   {path: '/weapon', component: WeaponNew, name: 'WeaponNew'},
 
-  {path: '/ships', component: ShipList, name: 'ShipList'},
+  {path: '/ships', component: ShipList, name: 'Ships'},
   {path: '/ship/:id', component: ShipView, name: 'ShipView'},
   {path: '/ship/:id/edit', component: ShipEdit, name: 'ShipEdit'},
   {path: '/ship', component: ShipNew, name: 'ShipNew'}
