@@ -12,4 +12,8 @@ import { RouteParams } from 'angular2/router';
   `
 })
 
-export default class MasterView {};
+export default class MasterView {
+  constructor(params: RouteParams) {
+    this.id = params.get('id');
+  }
+};
